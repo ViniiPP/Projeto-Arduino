@@ -1,9 +1,12 @@
 import socket
 from datetime import *
 
+HOST = '10.1.25.117'
+PORT =  8083
+
 def start_client():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client_socket.connect(('localhost', 8102))
+    client_socket.connect((HOST, PORT))
 
 
     while True:
